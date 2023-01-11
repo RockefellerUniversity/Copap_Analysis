@@ -1,0 +1,20 @@
+1 minLog_CoEvolve 5
+1 minLog_CoEvolve 6
+4 minLog_CoEvolve 6
+5 minLog_CoEvolve 6
+6 minLog_CoEvolve 8
+12 minLog_CoEvolve 13
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14

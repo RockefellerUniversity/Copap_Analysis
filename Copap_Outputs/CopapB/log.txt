@@ -1,0 +1,1543 @@
+START OF LOG FILE
+# Process_id= 3130
++=============================================================+
++  The gainLoss project:										
++  Analysis of Phyletic Patterns in a Likelihood Framework		
++  Version: gainLoss.VR01.26 - last updated 08.11.2012						
++  Ofir Cohen - ofircohe@tau.ac.il								
++=============================================================+
+
+ ---------------------- THE PARAMETERS ----------------------------
+Likelihood computation is performed while acounting for un-oberved data
+With min number of presences('1's)= 1
+With min number of absences('0's)= 0
+'Reversible'(Root.freq==stationary.freq) model is used
+RootFreq EQ stationary (taken from each sp - gain/(gain+loss) )
+inTree file: /bioseq/data/results/CoPAP/16655968237516/usrTreeFile.ORIG
+inSeq file: /bioseq/data/results/CoPAP/16655968237516/msaFile.aln
+log: RESULTS//log.txt with level= 4
+Optimization of the model parmeters is performed
+branch lengths are not optimized
+calculePosteriorExpectationOfChange is done Analytically
+-------------------------------------------------------------------
+
+ startSequenceContainer
+numberOfSeqs=180
+seqLen=14
+Num of zeros=1126
+Num of ones=1394
+Num of unKnowns=0
+
+ startStochasticProcess...
+
+InitGainLossByEmpiricalFreq: freq 1=init_gain= 0.553175
+The rateDist was initialized as GAMMA_PLUS_INV with: initAlphaRate=0.5 and initProbInvariant=0.05
+Stochastic process normalized with norm_factor=0.494345
+startStochasticProcess SimpleGamma of 4 categories... 
+with gain=0.553175 loss=0.446825 root(1)=0.2
+Stochastic process 'simple' normalized with norm_factor=0.494345
+
+ startingEvolTreeTopology...
+default rooting used, root name is N1
+sons of root are:
+Stylonychia-lemnae  N2  
+unObservableData object initialized with number of unObservable patterns= 1
+The Tree Likelihood AllPosAlphTheSame is -874.179
+Starting normalizeQandTree...(so that sumQii=1 (or weighted ave. of sunOii's for many Qs))
+Q were multiplied by 1
+The Tree Likelihood AllPosAlphTheSame is -874.179
+ AlphaRate 0.5
+ ProbInvariantRate 0.05
+ Gain 1.11901
+ Loss 0.903874
+	Gain/Loss  ratio= 1.23801
+ Stationary '1' Freq at the root (g/(g+l) = 0.553175
+ Total branch lengths:135.882
+
+Starting MaxParsimonyChange...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 302.039 (with 263 events)
+ Gain=39
+ Losses=224
+TIME = 0.0166667 minutes
+
+
+
+ *** Start Optimizations
+
+ WARN: no branch length estimation is performed with too few positions =14
+
+ WARN: Skip MultipleAllBranchesByFactorAtStart with too few number of positions 14
+  multipleAllBranchesByFactorAtStartByMaxParsimonyCost Total branch lengths: 18.7857 with respect to costOfTreeMP 263
+-------------------------------
+Starting optimizations: maxNumIterations=3
+
+######### optimization starting epsilonCycle=1 maxNumIterations=3
+start optimization with L= -844.896
+
+------ Model+BBL iter=1
+### optimization starting- epsilonOptParam=0.01 epsilonOptIter= 0.04, MaxNumIterations=10
+start optimization with:
+ L= -844.896 gainLossRatio= 1.23801 gain= 1.11901 loss= 0.903874 Alpha= 0.5 RateProbInvariant= 0.05
+
+
+---- iter=1
+currBestL= -840.503	GainLossRatio= 0.849355
+currBestL= -817.585	Alpha= 3.48207
+currBestL= -817.257	RateProbInvariant= 0.00101198
+
+---- iter=2
+currBestL= -815.739	GainLossRatio= 0.615634
+currBestL= -815.703	Alpha= 3.14244
+
+---- iter=3
+currBestL= -815.7	GainLossRatio= 0.606016
+currBestL= -815.699	Alpha= 3.11102
+ model optimization converged. Iter= 3 Likelihood=-815.699
+-------------------------------
+Model optimization over with: 
+Gain 0.778471
+Loss 1.32506
+	Gain/Loss  ratio= 0.587498
+AlphaRateRate 3.11102
+ProbInvariantRate 0.00101198
+updated likelihood (after optimizeParameters)= -815.699
+Model optimization RUNNING TIME = 0.366667 minutes
+
+
+------ Model+BBL iter=2
+### optimization starting- epsilonOptParam=0.01 epsilonOptIter= 0.04, MaxNumIterations=10
+start optimization with:
+ L= -815.699 gainLossRatio= 0.606016 gain= 0.803008 loss= 1.32506 Alpha= 3.11102 RateProbInvariant= 0.00101198
+
+
+---- iter=1
+ model optimization converged. Iter= 1 Likelihood=-815.699
+-------------------------------
+Model optimization over with: 
+Gain 0.803008
+Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+AlphaRateRate 3.11102
+ProbInvariantRate 0.00101198
+updated likelihood (after optimizeParameters)= -815.699
+Model optimization RUNNING TIME = 0.1 minutes
+
+ OverAll optimization converged. Iter= 2 Likelihood=-815.699
+Optimization RUNNING TIME = 0.466667 minutes
+
+# Best likelihood after optimization=-815.699
+TIME = 0.466667 minutes
+
+Starting normalizeQandTree...(so that sumQii=1 (or weighted ave. of sunOii's for many Qs))
+Q were multiplied by 1
+Tree branches multi by 1
+The Tree Likelihood AllPosAlphTheSame is -815.699
+ AlphaRate 3.11102
+ ProbInvariantRate 0.00101198
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+
+ WARN: distanceFromRootForRecent=1, distanceFromNearestOTUForRecent=0.000001 are not estimated
+
+Starting calculePosteriorExpectationOfChange...
+
+The required LpostPerCat is empty - run Rate4Site to compute.
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 0 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 0.0166667 minutes
+
+Mean   values Gain=8.95053	Loss=12.3474
+Median values Gain=9.95777	Loss=15.3107
+
+TIME = 0.0166667 minutes (calculePosteriorExpectationOfChange)
+
+
+Starting computeAmongSitesCorrelations...
+Update _minNumOfMPEvent2RemoveSimulatedPositions to  3 from 1 with respect to 180 species
+
+Based on Maximum parsimony Remove positions from Real data (remove positions with no events)...
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=0
+After remove numOfPositions=14
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 1
+Correlate all sites (all-against-all, STRING style print)
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.169872 Median=0.0945429
+TIME = 0 minutes
+TIME = 0 minutes (computeAmongSitesCorrelations)
+
+
+
+  startParametricBootstapCorrelation 
+
+Start Parametric bootstrap simulations. With up to 10 iterations or till pair with Corr=1 simulated for Rate=17.2879
+
+ Parametric bootstrap iteration 1
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0166667 minutes
+
+WARN: removed 12 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 171631 (with 129382 events)
+ Gain=42207
+ Losses=87175
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=57
+After remove numOfPositions=7931
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.53333 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.05 minutes
+
+Mean   values Gain=9.43914	Loss=9.62828
+Median values Gain=7.8647	Loss=6.05059
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7931
+removed=0
+After remove numOfPositions=7931
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0509159 Median=0.0245321
+TIME = 12.5667 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31446415
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31446415)
+-0.8	1	(31446415)
+-0.7	1	(31446415)
+-0.6	1	(31446415)
+-0.5	1	(31446415)
+-0.4	1	(31446415)
+-0.3	1	(31446415)
+-0.2	1	(31446415)
+-0.1	1	(31446415)
+0	0.722981	(22735174)
+0.1	0.215706	(6783186)
+0.2	0.0406916	(1279604)
+0.3	0.00368869	(115996)
+0.4	0.000207178	(6515)
+0.5	1.50097e-05	(472)
+0.6	1.49461e-06	(47)
+0.7	6.36003e-08	(2)
+0.8	0	(0)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31446415 pairs of correlating sites
+Minimal rate (Nmin)=1.29109 max=24.696
+TIME = 0.233333 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31446415
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.29109
+Num of pairs above threshold (valid)=31446415
+
+Size of overlapped bins =0.276989
+
+1 Bin.	#samples=	8710317.	From rate:	1.29109	-	3.98979.	is with corr:	-0.02645	-	0.75547	Ave=	0.0313621	Median=	0.00147	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 2.90267
+2 Bin.	#samples=	8710317.	From rate:	2.50901	-	4.59008.	is with corr:	-0.02779	-	0.64401	Ave=	0.0337251	Median=	0.0024	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.47562
+3 Bin.	#samples=	8710317.	From rate:	3.30265	-	5.20131.	is with corr:	-0.03061	-	0.64401	Ave=	0.035923	Median=	0.004	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.05375
+4 Bin.	#samples=	8710317.	From rate:	3.70681	-	5.85158.	is with corr:	-0.03302	-	0.64401	Ave=	0.0390672	Median=	0.00706	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.67447
+5 Bin.	#samples=	8710317.	From rate:	4.22361	-	6.59762.	is with corr:	-0.03302	-	0.6351	Ave=	0.0427255	Median=	0.01125	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.32959
+6 Bin.	#samples=	8710317.	From rate:	4.8281	-	7.54434.	is with corr:	-0.0345	-	0.57693	Ave=	0.0466902	Median=	0.01676	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.98902
+7 Bin.	#samples=	8710317.	From rate:	5.41222	-	8.89707.	is with corr:	-0.0345	-	0.57693	Ave=	0.0518851	Median=	0.02516	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.79874
+8 Bin.	#samples=	8710317.	From rate:	6.1604	-	10.4922.	is with corr:	-0.0345	-	0.57693	Ave=	0.0591627	Median=	0.03739	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 7.92423
+9 Bin.	#samples=	8710317.	From rate:	7.08442	-	12.7289.	is with corr:	-0.0345	-	0.55038	Ave=	0.0673795	Median=	0.04985	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 9.28848
+10 Bin.	#samples=	8710317.	From rate:	8.25478	-	24.696.	is with corr:	-0.03183	-	0.55038	Ave=	0.0797151	Median=	0.06341	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 11.049
+TIME = 0.583333 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+TIME = 0 minutes
+
+TIME = 21.6333 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 2
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0166667 minutes
+
+WARN: removed 8 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 170295 (with 128213 events)
+ Gain=42040
+ Losses=86173
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=68
+After remove numOfPositions=7924
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.56667 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.01667 minutes
+
+Mean   values Gain=9.39564	Loss=9.48453
+Median values Gain=7.8248	Loss=5.86952
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7924
+removed=0
+After remove numOfPositions=7924
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0498872 Median=0.0233307
+TIME = 12.7333 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31390926
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31390926)
+-0.8	1	(31390926)
+-0.7	1	(31390926)
+-0.6	1	(31390926)
+-0.5	1	(31390926)
+-0.4	1	(31390926)
+-0.3	1	(31390926)
+-0.2	1	(31390926)
+-0.1	1	(31390926)
+0	0.714313	(22422942)
+0.1	0.211966	(6653796)
+0.2	0.0397523	(1247860)
+0.3	0.00358514	(112541)
+0.4	0.00020044	(6292)
+0.5	1.34115e-05	(421)
+0.6	1.2424e-06	(39)
+0.7	6.37127e-08	(2)
+0.8	3.18563e-08	(1)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31390926 pairs of correlating sites
+Minimal rate (Nmin)=1.39593 max=25.7568
+TIME = 0.233333 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31390926
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.39593
+Num of pairs above threshold (valid)=31390926
+
+Size of overlapped bins =0.293675
+
+1 Bin.	#samples=	9218723.	From rate:	1.39593	-	4.04242.	is with corr:	-0.0272	-	0.86436	Ave=	0.0304127	Median=	0.00098	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.00783
+2 Bin.	#samples=	9218723.	From rate:	2.40238	-	4.6168.	is with corr:	-0.03023	-	0.71299	Ave=	0.0332047	Median=	0.00215	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.51509
+3 Bin.	#samples=	9218723.	From rate:	3.2945	-	5.22006.	is with corr:	-0.03171	-	0.71299	Ave=	0.0357236	Median=	0.00385	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.0803
+4 Bin.	#samples=	9218723.	From rate:	3.67279	-	5.80634.	is with corr:	-0.03171	-	0.71299	Ave=	0.0385865	Median=	0.00657	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.65356
+5 Bin.	#samples=	9218723.	From rate:	4.14106	-	6.5969.	is with corr:	-0.03371	-	0.61654	Ave=	0.0421192	Median=	0.01059	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.27522
+6 Bin.	#samples=	9218723.	From rate:	4.69084	-	7.50264.	is with corr:	-0.03371	-	0.61654	Ave=	0.0458882	Median=	0.01557	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.90393
+7 Bin.	#samples=	9218723.	From rate:	5.31985	-	8.75801.	is with corr:	-0.03371	-	0.53433	Ave=	0.0505254	Median=	0.02283	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.69036
+8 Bin.	#samples=	9218723.	From rate:	5.96177	-	10.3534.	is with corr:	-0.03371	-	0.53433	Ave=	0.0572219	Median=	0.03385	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 7.64426
+9 Bin.	#samples=	9218723.	From rate:	6.78056	-	12.6959.	is with corr:	-0.03341	-	0.53295	Ave=	0.065389	Median=	0.0466	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 8.97856
+10 Bin.	#samples=	9218723.	From rate:	7.79139	-	25.7568.	is with corr:	-0.03341	-	0.54994	Ave=	0.0770447	Median=	0.06049	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 10.5916
+TIME = 0.583333 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+TIME = 0 minutes
+
+TIME = 21.85 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 3
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0166667 minutes
+
+WARN: removed 6 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 170159 (with 127516 events)
+ Gain=42600
+ Losses=84916
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=69
+After remove numOfPositions=7925
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.6 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.18333 minutes
+
+Mean   values Gain=9.48073	Loss=9.22806
+Median values Gain=8.008	Loss=5.81629
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7925
+removed=0
+After remove numOfPositions=7925
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0504601 Median=0.0239597
+TIME = 12.7333 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31398850
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31398850)
+-0.8	1	(31398850)
+-0.7	1	(31398850)
+-0.6	1	(31398850)
+-0.5	1	(31398850)
+-0.4	1	(31398850)
+-0.3	1	(31398850)
+-0.2	1	(31398850)
+-0.1	1	(31398850)
+0	0.723336	(22711930)
+0.1	0.213908	(6716466)
+0.2	0.0400257	(1256761)
+0.3	0.00366886	(115198)
+0.4	0.0002216	(6958)
+0.5	1.76121e-05	(553)
+0.6	1.75166e-06	(55)
+0.7	3.50331e-07	(11)
+0.8	9.55449e-08	(3)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31398850 pairs of correlating sites
+Minimal rate (Nmin)=1.28619 max=23.4714
+TIME = 0.25 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31398850
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.28619
+Num of pairs above threshold (valid)=31398850
+
+Size of overlapped bins =0.319501
+
+1 Bin.	#samples=	10031977.	From rate:	1.28619	-	4.26039.	is with corr:	-0.02964	-	0.82513	Ave=	0.032563	Median=	0.00203	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.36275
+2 Bin.	#samples=	10031977.	From rate:	2.6522	-	4.74397.	is with corr:	-0.02964	-	0.7717	Ave=	0.0348171	Median=	0.00295	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.80189
+3 Bin.	#samples=	10031977.	From rate:	3.31202	-	5.32637.	is with corr:	-0.03024	-	0.7717	Ave=	0.0370516	Median=	0.00466	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.13968
+4 Bin.	#samples=	10031977.	From rate:	3.60331	-	5.98265.	is with corr:	-0.03076	-	0.63694	Ave=	0.0394904	Median=	0.00716	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.6891
+5 Bin.	#samples=	10031977.	From rate:	4.0814	-	6.69918.	is with corr:	-0.03214	-	0.62306	Ave=	0.0424524	Median=	0.01056	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.28465
+6 Bin.	#samples=	10031977.	From rate:	4.65663	-	7.64637.	is with corr:	-0.03443	-	0.58748	Ave=	0.045995	Median=	0.01541	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.93056
+7 Bin.	#samples=	10031977.	From rate:	5.24082	-	8.86057.	is with corr:	-0.03443	-	0.58748	Ave=	0.050592	Median=	0.02257	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.64066
+8 Bin.	#samples=	10031977.	From rate:	5.88317	-	10.4033.	is with corr:	-0.03665	-	0.56607	Ave=	0.0566285	Median=	0.03282	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 7.5329
+9 Bin.	#samples=	10031977.	From rate:	6.56025	-	12.6208.	is with corr:	-0.03665	-	0.55492	Ave=	0.0642079	Median=	0.04529	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 8.67817
+10 Bin.	#samples=	10031977.	From rate:	7.42583	-	23.4714.	is with corr:	-0.03665	-	0.55728	Ave=	0.074787	Median=	0.05843	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 10.2219
+TIME = 0.65 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+TIME = 0 minutes
+
+TIME = 22.1333 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 4
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0166667 minutes
+
+WARN: removed 6 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 169519 (with 127310 events)
+ Gain=42167
+ Losses=85143
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=72
+After remove numOfPositions=7922
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.58333 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.18333 minutes
+
+Mean   values Gain=9.33019	Loss=9.42084
+Median values Gain=7.93429	Loss=5.8561
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7922
+removed=0
+After remove numOfPositions=7922
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0497039 Median=0.0229517
+TIME = 12.75 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31375081
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31375081)
+-0.8	1	(31375081)
+-0.7	1	(31375081)
+-0.6	1	(31375081)
+-0.5	1	(31375081)
+-0.4	1	(31375081)
+-0.3	1	(31375081)
+-0.2	1	(31375081)
+-0.1	1	(31375081)
+0	0.712422	(22352309)
+0.1	0.211012	(6620522)
+0.2	0.0396029	(1242544)
+0.3	0.00361736	(113495)
+0.4	0.000205035	(6433)
+0.5	1.37689e-05	(432)
+0.6	1.52988e-06	(48)
+0.7	1.59362e-07	(5)
+0.8	6.37449e-08	(2)
+0.9	3.18724e-08	(1)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31375081 pairs of correlating sites
+Minimal rate (Nmin)=1.28619 max=23.4977
+TIME = 0.25 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31375081
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.28619
+Num of pairs above threshold (valid)=31375081
+
+Size of overlapped bins =0.163901
+
+1 Bin.	#samples=	5142397.	From rate:	1.28619	-	3.38254.	is with corr:	-0.02334	-	0.90147	Ave=	0.0290883	Median=	0.00087	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	1.94462e-07 (1)
+  Mid rate= 2.81917
+2 Bin.	#samples=	5142397.	From rate:	2.84378	-	3.96812.	is with corr:	-0.0267	-	0.72955	Ave=	0.0308116	Median=	0.00075	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.40346
+3 Bin.	#samples=	5142397.	From rate:	3.42322	-	4.59178.	is with corr:	-0.03042	-	0.60751	Ave=	0.0336372	Median=	0.00256	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.9955
+4 Bin.	#samples=	5142397.	From rate:	4.02308	-	5.25962.	is with corr:	-0.03075	-	0.58256	Ave=	0.0377908	Median=	0.0058	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.63167
+5 Bin.	#samples=	5142397.	From rate:	4.67345	-	5.92542.	is with corr:	-0.03255	-	0.63145	Ave=	0.0412575	Median=	0.00977	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.30706
+6 Bin.	#samples=	5142397.	From rate:	5.35381	-	6.73854.	is with corr:	-0.03271	-	0.63145	Ave=	0.0448571	Median=	0.01437	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.96951
+7 Bin.	#samples=	5142397.	From rate:	6.03192	-	7.87111.	is with corr:	-0.03271	-	0.62723	Ave=	0.0506083	Median=	0.02304	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.83894
+8 Bin.	#samples=	5142397.	From rate:	6.99529	-	9.58659.	is with corr:	-0.03176	-	0.55964	Ave=	0.0586515	Median=	0.03709	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 8.04614
+9 Bin.	#samples=	5142397.	From rate:	8.23188	-	11.9746.	is with corr:	-0.03096	-	0.55112	Ave=	0.0699716	Median=	0.05261	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 9.84217
+10 Bin.	#samples=	5142397.	From rate:	10.0419	-	23.4977.	is with corr:	-0.03292	-	0.50441	Ave=	0.0875637	Median=	0.0712	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 12.3743
+TIME = 0.316667 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+TIME = 0 minutes
+
+TIME = 21.8 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 5
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0166667 minutes
+
+WARN: removed 5 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 170269 (with 127824 events)
+ Gain=42403
+ Losses=85421
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=78
+After remove numOfPositions=7917
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.61667 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.18333 minutes
+
+Mean   values Gain=9.48035	Loss=9.3117
+Median values Gain=7.97741	Loss=5.76883
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7917
+removed=0
+After remove numOfPositions=7917
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0503238 Median=0.0238783
+TIME = 12.7667 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31335486
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31335486)
+-0.8	1	(31335486)
+-0.7	1	(31335486)
+-0.6	1	(31335486)
+-0.5	1	(31335486)
+-0.4	1	(31335486)
+-0.3	1	(31335486)
+-0.2	1	(31335486)
+-0.1	1	(31335486)
+0	0.718511	(22514903)
+0.1	0.213776	(6698789)
+0.2	0.0401441	(1257934)
+0.3	0.00371394	(116378)
+0.4	0.00022224	(6964)
+0.5	1.58606e-05	(497)
+0.6	1.37225e-06	(43)
+0.7	2.23389e-07	(7)
+0.8	0	(0)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31335486 pairs of correlating sites
+Minimal rate (Nmin)=1.28222 max=24.8991
+TIME = 0.233333 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31335486
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.28222
+Num of pairs above threshold (valid)=31335486
+
+Size of overlapped bins =0.265026
+
+1 Bin.	#samples=	8304713.	From rate:	1.28222	-	3.96339.	is with corr:	-0.02766	-	0.78117	Ave=	0.0310493	Median=	0.00123	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 2.87624
+2 Bin.	#samples=	8304713.	From rate:	2.3968	-	4.5047.	is with corr:	-0.02781	-	0.72501	Ave=	0.0335273	Median=	0.00225	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.44941
+3 Bin.	#samples=	8304713.	From rate:	3.1732	-	5.05067.	is with corr:	-0.02944	-	0.7123	Ave=	0.0365975	Median=	0.00433	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.04365
+4 Bin.	#samples=	8304713.	From rate:	3.80949	-	5.62177.	is with corr:	-0.03033	-	0.63213	Ave=	0.0394536	Median=	0.00705	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.6577
+5 Bin.	#samples=	8304713.	From rate:	4.30668	-	6.46115.	is with corr:	-0.03033	-	0.58383	Ave=	0.0423737	Median=	0.01064	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.29932
+6 Bin.	#samples=	8304713.	From rate:	4.8446	-	7.40106.	is with corr:	-0.03359	-	0.58383	Ave=	0.0461944	Median=	0.01589	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.9522
+7 Bin.	#samples=	8304713.	From rate:	5.42553	-	8.55281.	is with corr:	-0.03359	-	0.56574	Ave=	0.0513222	Median=	0.02399	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.73933
+8 Bin.	#samples=	8304713.	From rate:	6.15562	-	10.1643.	is with corr:	-0.03359	-	0.56192	Ave=	0.0578385	Median=	0.03525	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 7.82897
+9 Bin.	#samples=	8304713.	From rate:	7.14242	-	12.4653.	is with corr:	-0.03301	-	0.56192	Ave=	0.0662209	Median=	0.04827	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 9.11826
+10 Bin.	#samples=	8304713.	From rate:	8.28682	-	24.8991.	is with corr:	-0.03301	-	0.56003	Ave=	0.0784161	Median=	0.06219	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 10.9096
+TIME = 0.516667 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+numOfpairs=91
+numOfpairs With Rate below minimal Threshold=1 are 0
+
+Real Data correlations frequencies:
+num of correlations=91
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(91)
+-0.8	1	(91)
+-0.7	1	(91)
+-0.6	1	(91)
+-0.5	1	(91)
+-0.4	1	(91)
+-0.3	1	(91)
+-0.2	1	(91)
+-0.1	1	(91)
+0	0.791209	(72)
+0.1	0.395604	(36)
+0.2	0.164835	(15)
+0.3	0.0879121	(8)
+0.4	0.021978	(2)
+0.5	0.021978	(2)
+0.6	0.021978	(2)
+0.7	0.021978	(2)
+0.8	0	(0)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+TIME = 0 minutes
+
+
+pVals2qVals...
+  ***   corIndex=0
+Before FDR correction there are 11 pairs with significant pVal=0.01
+Before FDR correction there are 16 pairs with significant pVal=0.05
+Before FDR correction there are 11 pairs with significant pVal=0.01
+Before FDR correction there are 8 pairs with significant pVal=0.005
+Before FDR correction there are 6 pairs with significant pVal=0.001
+Before FDR correction there are 2 pairs with significant pVal=0.0001
+Compute BH threshold for number of multiple tests=91 ...
+For FDR level of 0.01 BH threshold=0.000378042 with 5 6 significant values
+For FDR level of 0.01 BH threshold is 0.000378042
+For FDR level of 0.001 BH threshold is 2.41498e-08
+TIME = 0 minutes
+
+
+print Correlation data All significant sites...
+
+print Correlation data All significant sites...
+ Convergence of BH: current Minus last=0.000378042
+TIME = 22.0333 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 6
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0333333 minutes
+
+WARN: removed 9 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 171241 (with 128851 events)
+ Gain=42348
+ Losses=86503
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=71
+After remove numOfPositions=7920
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.63333 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.16667 minutes
+
+Mean   values Gain=9.46091	Loss=9.50666
+Median values Gain=7.98262	Loss=5.97585
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7920
+removed=0
+After remove numOfPositions=7920
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0507924 Median=0.0242055
+TIME = 12.75 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31359240
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31359240)
+-0.8	1	(31359240)
+-0.7	1	(31359240)
+-0.6	1	(31359240)
+-0.5	1	(31359240)
+-0.4	1	(31359240)
+-0.3	1	(31359240)
+-0.2	1	(31359240)
+-0.1	1	(31359240)
+0	0.723683	(22694152)
+0.1	0.215616	(6761548)
+0.2	0.040638	(1274378)
+0.3	0.00364904	(114431)
+0.4	0.000209635	(6574)
+0.5	1.42223e-05	(446)
+0.6	1.02043e-06	(32)
+0.7	1.91331e-07	(6)
+0.8	3.18885e-08	(1)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31359240 pairs of correlating sites
+Minimal rate (Nmin)=1.28728 max=24.5107
+TIME = 0.233333 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31359240
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.28728
+Num of pairs above threshold (valid)=31359240
+
+Size of overlapped bins =0.272658
+
+1 Bin.	#samples=	8550352.	From rate:	1.28728	-	4.00104.	is with corr:	-0.02677	-	0.80788	Ave=	0.0309895	Median=	0.00147	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 2.9539
+2 Bin.	#samples=	8550352.	From rate:	2.65566	-	4.60193.	is with corr:	-0.03342	-	0.62317	Ave=	0.0336704	Median=	0.00246	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.49071
+3 Bin.	#samples=	8550352.	From rate:	3.36035	-	5.20247.	is with corr:	-0.03342	-	0.62037	Ave=	0.0363992	Median=	0.00428	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.08728
+4 Bin.	#samples=	8550352.	From rate:	3.8002	-	5.88957.	is with corr:	-0.03342	-	0.62037	Ave=	0.039156	Median=	0.00697	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.70305
+5 Bin.	#samples=	8550352.	From rate:	4.33198	-	6.59552.	is with corr:	-0.03342	-	0.62037	Ave=	0.0428204	Median=	0.01091	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.35472
+6 Bin.	#samples=	8550352.	From rate:	4.87943	-	7.48137.	is with corr:	-0.03344	-	0.56282	Ave=	0.046652	Median=	0.01623	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.02361
+7 Bin.	#samples=	8550352.	From rate:	5.5236	-	8.76353.	is with corr:	-0.03344	-	0.54379	Ave=	0.0520666	Median=	0.02477	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.79079
+8 Bin.	#samples=	8550352.	From rate:	6.26201	-	10.3525.	is with corr:	-0.03344	-	0.53501	Ave=	0.0587596	Median=	0.03625	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 7.87937
+9 Bin.	#samples=	8550352.	From rate:	7.10362	-	12.6188.	is with corr:	-0.03122	-	0.54529	Ave=	0.0672162	Median=	0.0494	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 9.22137
+10 Bin.	#samples=	8550352.	From rate:	8.26772	-	24.5107.	is with corr:	-0.03584	-	0.54529	Ave=	0.0794184	Median=	0.0632	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 10.9819
+TIME = 0.516667 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+TIME = 0 minutes
+
+TIME = 22.0167 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 7
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0166667 minutes
+
+WARN: removed 5 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 171190 (with 128268 events)
+ Gain=42879
+ Losses=85389
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=69
+After remove numOfPositions=7926
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.65 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.21667 minutes
+
+Mean   values Gain=9.48211	Loss=9.38662
+Median values Gain=8.05126	Loss=5.82038
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7926
+removed=0
+After remove numOfPositions=7926
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0503107 Median=0.0239345
+TIME = 12.85 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31406775
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31406775)
+-0.8	1	(31406775)
+-0.7	1	(31406775)
+-0.6	1	(31406775)
+-0.5	1	(31406775)
+-0.4	1	(31406775)
+-0.3	1	(31406775)
+-0.2	1	(31406775)
+-0.1	1	(31406775)
+0	0.722376	(22687486)
+0.1	0.212668	(6679211)
+0.2	0.0393355	(1235400)
+0.3	0.00353274	(110952)
+0.4	0.000200243	(6289)
+0.5	1.36276e-05	(428)
+0.6	1.40097e-06	(44)
+0.7	6.36805e-08	(2)
+0.8	0	(0)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31406775 pairs of correlating sites
+Minimal rate (Nmin)=1.77491 max=24.0433
+TIME = 0.233333 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31406775
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.77491
+Num of pairs above threshold (valid)=31406775
+
+Size of overlapped bins =0.190956
+
+1 Bin.	#samples=	5997315.	From rate:	1.77491	-	3.45066.	is with corr:	-0.02494	-	0.76875	Ave=	0.0305522	Median=	0.00146	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 2.85625
+2 Bin.	#samples=	5997315.	From rate:	2.84584	-	4.03143.	is with corr:	-0.02841	-	0.6505	Ave=	0.0326814	Median=	0.00162	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.43815
+3 Bin.	#samples=	5997315.	From rate:	3.41909	-	4.6737.	is with corr:	-0.02841	-	0.62089	Ave=	0.0348904	Median=	0.00311	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.01764
+4 Bin.	#samples=	5997315.	From rate:	4.00617	-	5.36838.	is with corr:	-0.02812	-	0.62005	Ave=	0.0378728	Median=	0.00563	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.65418
+5 Bin.	#samples=	5997315.	From rate:	4.6311	-	6.08089.	is with corr:	-0.03055	-	0.62889	Ave=	0.0415424	Median=	0.00979	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.34262
+6 Bin.	#samples=	5997315.	From rate:	5.30926	-	7.05507.	is with corr:	-0.03359	-	0.62889	Ave=	0.0465222	Median=	0.0167	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.0462
+7 Bin.	#samples=	5997315.	From rate:	6.01006	-	8.23968.	is with corr:	-0.03359	-	0.56567	Ave=	0.0517687	Median=	0.0253	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.99103
+8 Bin.	#samples=	5997315.	From rate:	6.90444	-	9.8895.	is with corr:	-0.03197	-	0.55076	Ave=	0.0590673	Median=	0.03776	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 8.16139
+9 Bin.	#samples=	5997315.	From rate:	8.07405	-	12.1422.	is with corr:	-0.03336	-	0.55076	Ave=	0.0692653	Median=	0.05213	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 9.76268
+10 Bin.	#samples=	5997315.	From rate:	9.64953	-	24.0433.	is with corr:	-0.03868	-	0.54725	Ave=	0.0841968	Median=	0.06825	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 11.95
+TIME = 0.35 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+TIME = 0 minutes
+
+TIME = 22.0167 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 8
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0333333 minutes
+
+WARN: removed 8 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 170498 (with 127834 events)
+ Gain=42621
+ Losses=85213
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=69
+After remove numOfPositions=7923
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.68333 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.23333 minutes
+
+Mean   values Gain=9.46349	Loss=9.31986
+Median values Gain=7.92986	Loss=5.63826
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7923
+removed=0
+After remove numOfPositions=7923
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0504069 Median=0.0238148
+TIME = 12.7167 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31383003
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31383003)
+-0.8	1	(31383003)
+-0.7	1	(31383003)
+-0.6	1	(31383003)
+-0.5	1	(31383003)
+-0.4	1	(31383003)
+-0.3	1	(31383003)
+-0.2	1	(31383003)
+-0.1	1	(31383003)
+0	0.719547	(22581530)
+0.1	0.214281	(6724791)
+0.2	0.0403537	(1266419)
+0.3	0.00372976	(117051)
+0.4	0.000226428	(7106)
+0.5	1.61234e-05	(506)
+0.6	1.46576e-06	(46)
+0.7	1.27458e-07	(4)
+0.8	0	(0)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31383003 pairs of correlating sites
+Minimal rate (Nmin)=1.28733 max=25.3969
+TIME = 0.25 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31383003
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.28733
+Num of pairs above threshold (valid)=31383003
+
+Size of overlapped bins =0.167337
+
+1 Bin.	#samples=	5251543.	From rate:	1.28733	-	3.37678.	is with corr:	-0.02543	-	0.76913	Ave=	0.0299168	Median=	0.00131	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 2.79347
+2 Bin.	#samples=	5251543.	From rate:	2.83265	-	3.93433.	is with corr:	-0.02738	-	0.66345	Ave=	0.0324737	Median=	0.00138	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.39484
+3 Bin.	#samples=	5251543.	From rate:	3.40661	-	4.4903.	is with corr:	-0.02789	-	0.62632	Ave=	0.035103	Median=	0.00308	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.97383
+4 Bin.	#samples=	5251543.	From rate:	3.9889	-	5.06281.	is with corr:	-0.03012	-	0.59942	Ave=	0.0377011	Median=	0.0054	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.56582
+5 Bin.	#samples=	5251543.	From rate:	4.60217	-	5.84802.	is with corr:	-0.03126	-	0.66544	Ave=	0.0411587	Median=	0.00932	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.20262
+6 Bin.	#samples=	5251543.	From rate:	5.26439	-	6.70387.	is with corr:	-0.03126	-	0.66544	Ave=	0.0453773	Median=	0.01472	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.92285
+7 Bin.	#samples=	5251543.	From rate:	5.96942	-	8.03959.	is with corr:	-0.03397	-	0.56214	Ave=	0.0514375	Median=	0.02436	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.7946
+8 Bin.	#samples=	5251543.	From rate:	6.90906	-	9.63051.	is with corr:	-0.03397	-	0.56214	Ave=	0.0603656	Median=	0.03927	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 8.15346
+9 Bin.	#samples=	5251543.	From rate:	8.32177	-	12.1762.	is with corr:	-0.03318	-	0.54908	Ave=	0.0702811	Median=	0.05276	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 9.79756
+10 Bin.	#samples=	5251543.	From rate:	9.97625	-	25.3969.	is with corr:	-0.03322	-	0.54908	Ave=	0.0869163	Median=	0.07101	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 12.4849
+TIME = 0.35 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+TIME = 0 minutes
+
+TIME = 21.9667 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 9
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0166667 minutes
+
+WARN: removed 9 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 170914 (with 128711 events)
+ Gain=42161
+ Losses=86550
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=44
+After remove numOfPositions=7947
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.61667 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.13333 minutes
+
+Mean   values Gain=9.36406	Loss=9.54673
+Median values Gain=7.76989	Loss=5.92438
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7947
+removed=0
+After remove numOfPositions=7947
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0503427 Median=0.0235796
+TIME = 12.8 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31573431
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31573431)
+-0.8	1	(31573431)
+-0.7	1	(31573431)
+-0.6	1	(31573431)
+-0.5	1	(31573431)
+-0.4	1	(31573431)
+-0.3	1	(31573431)
+-0.2	1	(31573431)
+-0.1	1	(31573431)
+0	0.71863	(22689620)
+0.1	0.214025	(6757498)
+0.2	0.0405639	(1280741)
+0.3	0.00370558	(116998)
+0.4	0.000218285	(6892)
+0.5	1.48859e-05	(470)
+0.6	1.10853e-06	(35)
+0.7	1.90033e-07	(6)
+0.8	3.16722e-08	(1)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31573431 pairs of correlating sites
+Minimal rate (Nmin)=1.28731 max=25.7144
+TIME = 0.25 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31573431
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.28731
+Num of pairs above threshold (valid)=31573431
+
+Size of overlapped bins =0.223572
+
+1 Bin.	#samples=	7058931.	From rate:	1.28731	-	3.61721.	is with corr:	-0.02472	-	0.84613	Ave=	0.0298947	Median=	0.00098	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 2.86599
+2 Bin.	#samples=	7058931.	From rate:	2.81935	-	4.17273.	is with corr:	-0.02641	-	0.67659	Ave=	0.0325653	Median=	0.00156	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.43794
+3 Bin.	#samples=	7058931.	From rate:	3.38616	-	4.78595.	is with corr:	-0.03096	-	0.67659	Ave=	0.0347945	Median=	0.00297	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.03142
+4 Bin.	#samples=	7058931.	From rate:	3.95945	-	5.41926.	is with corr:	-0.03191	-	0.60441	Ave=	0.0376279	Median=	0.00547	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.64492
+5 Bin.	#samples=	7058931.	From rate:	4.54062	-	6.2416.	is with corr:	-0.03529	-	0.63792	Ave=	0.0415363	Median=	0.00966	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.31081
+6 Bin.	#samples=	7058931.	From rate:	5.11396	-	7.21462.	is with corr:	-0.03529	-	0.63792	Ave=	0.0467838	Median=	0.01624	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.98447
+7 Bin.	#samples=	7058931.	From rate:	5.82242	-	8.42666.	is with corr:	-0.03177	-	0.63792	Ave=	0.0522494	Median=	0.02473	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.88282
+8 Bin.	#samples=	7058931.	From rate:	6.61392	-	9.9793.	is with corr:	-0.03119	-	0.57278	Ave=	0.0592749	Median=	0.03739	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 8.01799
+9 Bin.	#samples=	7058931.	From rate:	7.65459	-	12.3134.	is with corr:	-0.03849	-	0.5575	Ave=	0.0687348	Median=	0.05078	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 9.47402
+10 Bin.	#samples=	7058931.	From rate:	9.04297	-	25.7144.	is with corr:	-0.03849	-	0.5575	Ave=	0.0824371	Median=	0.06596	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 11.5176
+TIME = 0.483333 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+TIME = 0 minutes
+
+TIME = 22.0167 minutes (mapping+correlations with simulated data)
+
+ Parametric bootstrap iteration 10
+simulateSequencesForParametricBootstrap numOfSitesInSeq=8000
+ AlphaRate 3.11102
+ Gain 0.803008
+ Loss 1.32506
+	Gain/Loss  ratio= 0.606016
+ Stationary '1' Freq at the root (g/(g+l) = 0.377341
+ Total branch lengths:18.7857
+TIME = 0.0166667 minutes
+
+WARN: removed 7 positions below minNumOfOnes=1
+
+Compute: Mapping + Correlation. CoMap Algorithm
+
+MaxParsimonyChange for simulated data (remove positions with no events)...
+ MaxParsimony with costMatrix - gainLossRatio 1:2.001
+Cost of tree is 172001 (with 129077 events)
+ Gain=42881
+ Losses=86196
+min Number Of Max Parsimony Event to consider a Position is 3
+removed=65
+After remove numOfPositions=7928
+
+The required LpostPerCat is empty - run Rate4Site to compute...
+Running rate4site...
+perform computeEB_EXP_siteSpecificRate... while computing posteriorProb PerCategory PerPosition
+computeRate4site RUNNING TIME = 1.63333 minutes
+
+Computation stochastic mapping
+Computation performed analytically for rate 0.456952
+Computation performed analytically for rate 0.901542
+Computation performed analytically for rate 1.64151
+Computation performed analytically for rate 1e-06
+TIME = 6.18333 minutes
+
+Mean   values Gain=9.54018	Loss=9.473
+Median values Gain=8.07761	Loss=5.87536
+
+Remove simulated positions below Nmin=1
+Before remove numOfPositions=7928
+removed=0
+After remove numOfPositions=7928
+Event Type=gain
+Event Type=loss
+Event _EventTypesFromTo is not applicable for both both 0->1 and 1->0 are computed
+Lowest pVal for correlation with rate below simulations is 0.01
+
+runComputeCorrelations...
+Fill events vectors...
+Compute correlation isPearson=1 with type=both
+Correlation coefficient (mean of Val=Mean/Median per selected) Mean=0.0509107 Median=0.0244529
+TIME = 12.7667 minutes
+
+produceSortedVectorsOfAllCorrelations for simulated data (sort rates and correlations (paired))...
+  ***   corIndex=0
+
+Simulated Data correlations frequencies:
+num of correlations=31422628
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(31422628)
+-0.8	1	(31422628)
+-0.7	1	(31422628)
+-0.6	1	(31422628)
+-0.5	1	(31422628)
+-0.4	1	(31422628)
+-0.3	1	(31422628)
+-0.2	1	(31422628)
+-0.1	1	(31422628)
+0	0.723027	(22719399)
+0.1	0.216069	(6789469)
+0.2	0.0409122	(1285568)
+0.3	0.00373397	(117331)
+0.4	0.000205489	(6457)
+0.5	1.40345e-05	(441)
+0.6	1.0502e-06	(33)
+0.7	3.18242e-08	(1)
+0.8	0	(0)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+Finish sorting 31422628 pairs of correlating sites
+Minimal rate (Nmin)=1.28731 max=26.1815
+TIME = 0.25 minutes (sort vectors)
+
+produceSortedVectorsOfCorrelationsBinedByRate for simulated data...
+Num of pairs in simulations=31422628
+For corIndex=0
+Nmin_min by threshold=1
+Nmin_min in dataset=1.28731
+Num of pairs above threshold (valid)=31422628
+
+Size of overlapped bins =0.158522
+
+1 Bin.	#samples=	4981187.	From rate:	1.28731	-	3.33882.	is with corr:	-0.02403	-	0.71179	Ave=	0.0294664	Median=	0.00095	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 2.77967
+2 Bin.	#samples=	4981187.	From rate:	2.84183	-	3.96866.	is with corr:	-0.02576	-	0.68615	Ave=	0.0323363	Median=	0.00154	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 3.39388
+3 Bin.	#samples=	4981187.	From rate:	3.42421	-	4.56827.	is with corr:	-0.02952	-	0.60142	Ave=	0.0350349	Median=	0.00338	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.0007
+4 Bin.	#samples=	4981187.	From rate:	4.03377	-	5.19886.	is with corr:	-0.02972	-	0.60463	Ave=	0.0379053	Median=	0.00601	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 4.62658
+5 Bin.	#samples=	4981187.	From rate:	4.67241	-	5.95394.	is with corr:	-0.02972	-	0.55134	Ave=	0.0417047	Median=	0.00979	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 5.28373
+6 Bin.	#samples=	4981187.	From rate:	5.34764	-	6.8273.	is with corr:	-0.03475	-	0.53854	Ave=	0.0460157	Median=	0.0159	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 6.03964
+7 Bin.	#samples=	4981187.	From rate:	6.12338	-	8.10938.	is with corr:	-0.03475	-	0.58011	Ave=	0.0527836	Median=	0.02661	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 7.01144
+8 Bin.	#samples=	4981187.	From rate:	7.23875	-	9.75729.	is with corr:	-0.03591	-	0.58011	Ave=	0.0606028	Median=	0.04012	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 8.32829
+9 Bin.	#samples=	4981187.	From rate:	8.5613	-	12.3032.	is with corr:	-0.03591	-	0.53359	Ave=	0.0717734	Median=	0.05459	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 10.0553
+10 Bin.	#samples=	4981187.	From rate:	10.3604	-	26.1815.	is with corr:	-0.03461	-	0.55062	Ave=	0.0890768	Median=	0.07307	ratioOfpairWithCorrEq1=	0 (0)	ratioOfpairWithCorrEq0.99=	0 (0)	ratioOfpairWithCorrEq0.9=	0 (0)
+  Mid rate= 12.7561
+TIME = 0.283333 minutes
+
+computedCorrelationsPValBasedOnSimulatedDataCoMapBins...
+  ***   corIndex=0
+numOfpairs With Rate - Below Simulation=0 - Above Simulation=0
+numOfpairs=91
+numOfpairs With Rate below minimal Threshold=1 are 0
+
+Real Data correlations frequencies:
+num of correlations=91
+Corr eq/above	ratioOfCorAbove	numAboveEq
+-0.9	1	(91)
+-0.8	1	(91)
+-0.7	1	(91)
+-0.6	1	(91)
+-0.5	1	(91)
+-0.4	1	(91)
+-0.3	1	(91)
+-0.2	1	(91)
+-0.1	1	(91)
+0	0.791209	(72)
+0.1	0.395604	(36)
+0.2	0.164835	(15)
+0.3	0.0879121	(8)
+0.4	0.021978	(2)
+0.5	0.021978	(2)
+0.6	0.021978	(2)
+0.7	0.021978	(2)
+0.8	0	(0)
+0.9	0	(0)
+0.95	0	(0)
+0.99	0	(0)
+0.999	0	(0)
+1	0	(0)
+
+TIME = 0 minutes
+
+
+pVals2qVals...
+  ***   corIndex=0
+Before FDR correction there are 11 pairs with significant pVal=0.01
+Before FDR correction there are 15 pairs with significant pVal=0.05
+Before FDR correction there are 11 pairs with significant pVal=0.01
+Before FDR correction there are 8 pairs with significant pVal=0.005
+Before FDR correction there are 6 pairs with significant pVal=0.001
+Before FDR correction there are 2 pairs with significant pVal=0.0001
+Compute BH threshold for number of multiple tests=91 ...
+For FDR level of 0.01 BH threshold=0.000392164 with 5 6 significant values
+For FDR level of 0.01 BH threshold is 0.000392164
+For FDR level of 0.001 BH threshold is 1.36524e-08
+TIME = 0 minutes
+
+
+print Correlation data All significant sites...
+
+print Correlation data All significant sites...
+ Convergence of BH: current Minus last=1.41221e-05
+TIME = 21.8333 minutes (mapping+correlations with simulated data)
+total NumberOf Pairs simulated and AboveNmin =314091835 after 11 iterations
+
+TOTAL RUNNING TIME = 2.71307e+07 minutes

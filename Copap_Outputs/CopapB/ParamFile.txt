@@ -1,0 +1,27 @@
+### required (Fasta)
+_seqFile   /bioseq/data/results/CoPAP/16655968237516/msaFile.aln
+##### recomended (newick)
+_treeFile  /bioseq/data/results/CoPAP/16655968237516/usrTreeFile.ORIG
+### run Type
+_performParametricBootstapCorrelation 1 # run gainLoss for CoPAP
+##### CoEvolution computation options
+_pValueCutOffForBootStrap 0.01
+_numberOfIterations2simulate 10
+_numberOfPositions2simulate 8000
+##Advanced CoEvolution options
+##### Evolutionary Model Options
+_rateDistributionType  GAMMA_PLUS_INV
+_printExpPerPosPerBranchMatrix 1
+_printPropExpOfChangeFullData 1
+## When user select "Gamma plus invariant category"
+#If selection in gain & loss rates is NOT the Mixture
+_rateDistributionType  GAMMA_PLUS_INV
+_isInitGainLossByEmpiricalFreq 1
+_minNumOfOnes 1
+_minNumOfZeros 0
+_logValue 4
+_performOptimizations 1
+_optimizationLevel mid
+_numberOfRateCategories 3
+_numberOfGainCategories 3
+_numberOfLossCategories 3
