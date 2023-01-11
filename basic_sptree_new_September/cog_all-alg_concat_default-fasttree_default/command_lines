@@ -1,0 +1,1 @@
+Sun Sep 11 14:59:51 2022	23d28421ec7d025d5f11b9faa9ff13de	False	/Users/thomascarroll/Desktop/Projects/Funabaki/Phylogeny/Phylogene/ete3Conda/envs/ete3/bin/ete3 --cpu 4 -w clustalo_default-trimal01-none-none -m cog_all-alg_concat_default-fasttree_default -o basic_sptree_new_September/ --clearall -a protein_September.fa --cogs COG_September.txt
