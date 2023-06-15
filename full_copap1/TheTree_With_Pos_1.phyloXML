@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd" xmlns="http://www.phyloxml.org">
+<phylogeny rooted="false">
+  <clade>
+    <clade>
+      <name>Stylonychia-lemnae</name>
+      <branch_length>0.299112</branch_length>
+       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+    </clade>
+    <clade>
+      <branch_length>0.299112</branch_length>
+      <clade>
+        <name>Symbiodinium-microadriaticum</name>
+        <branch_length>0.380767</branch_length>
+         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+      </clade>
+      <clade>
+        <branch_length>0.039441</branch_length>
+        <clade>
+          <branch_length>0.01641</branch_length>
+          <clade>
+            <branch_length>0.019396</branch_length>
+            <clade>
+              <branch_length>0.029269</branch_length>
+              <clade>
+                <name>Hondaea-fermentalgiana</name>
+                <branch_length>0.137285</branch_length>
+                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+              </clade>
+              <clade>
+                <branch_length>0.022508</branch_length>
+                <clade>
+                  <name>Emiliania-huxleyi</name>
+                  <branch_length>0.20465</branch_length>
+                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                </clade>
+                <clade>
+                  <branch_length>0.016279</branch_length>
+                  <clade>
+                    <branch_length>0.069607</branch_length>
+                    <clade>
+                      <name>Ectocarpus-siliculosus</name>
+                      <branch_length>0.100251</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                    <clade>
+                      <name>Thalassiosira-pseudonana</name>
+                      <branch_length>0.120212</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.055093</branch_length>
+                    <clade>
+                      <name>Encephalitozoon-cuniculi</name>
+                      <branch_length>0.265461</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                    <clade>
+                      <name>Giardia-intestinalis</name>
+                      <branch_length>0.344723</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>0.010223</branch_length>
+              <clade>
+                <branch_length>0.028178</branch_length>
+                <clade>
+                  <name>Phytophthora-sojae</name>
+                  <branch_length>0.120993</branch_length>
+                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                </clade>
+                <clade>
+                  <name>Tribonema-minus</name>
+                  <branch_length>0.093547</branch_length>
+                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.022842</branch_length>
+                <clade>
+                  <branch_length>0.034324</branch_length>
+                  <clade>
+                    <name>Blastocystis-spsubtype</name>
+                    <branch_length>0.205891</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                  </clade>
+                  <clade>
+                    <branch_length>0.035656</branch_length>
+                    <clade>
+                      <name>Cafeteria-roenbergensis</name>
+                      <branch_length>0.115388</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                    <clade>
+                      <name>Symbiodinium-spKB8</name>
+                      <branch_length>0.141142</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>0.011731</branch_length>
+                  <clade>
+                    <name>Acanthamoeba-castellanii</name>
+                    <branch_length>0.136383</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                  </clade>
+                  <clade>
+                    <branch_length>0.043356</branch_length>
+                    <clade>
+                      <branch_length>0.177885</branch_length>
+                      <clade>
+                        <name>Leishmania-major</name>
+                        <branch_length>0.049549</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                      <clade>
+                        <name>Trypanosoma-brucei</name>
+                        <branch_length>0.045663</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.040091</branch_length>
+                      <clade>
+                        <name>Reticulomyxa-filosa</name>
+                        <branch_length>0.296701</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                      <clade>
+                        <name>Entamoeba-histolytica</name>
+                        <branch_length>0.133026</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+          <clade>
+            <branch_length>0.048736</branch_length>
+            <clade>
+              <branch_length>0.053481</branch_length>
+              <clade>
+                <name>Klebsormidium-nitens</name>
+                <branch_length>0.098398</branch_length>
+                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+              </clade>
+              <clade>
+                <branch_length>0.02722</branch_length>
+                <clade>
+                  <name>Physcomitrella-patens</name>
+                  <branch_length>0.068856</branch_length>
+                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                </clade>
+                <clade>
+                  <branch_length>0.01028</branch_length>
+                  <clade>
+                    <name>Ceratopteris-richardii</name>
+                    <branch_length>0.064722</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                  </clade>
+                  <clade>
+                    <branch_length>0.030439</branch_length>
+                    <clade>
+                      <name>Arabidopsis-thaliana</name>
+                      <branch_length>0.059274</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                    </clade>
+                    <clade>
+                      <branch_length>0.041213</branch_length>
+                      <clade>
+                        <name>Oryza-sativa</name>
+                        <branch_length>0.01804</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                      </clade>
+                      <clade>
+                        <name>Zea-mays</name>
+                        <branch_length>0.019444</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>0.019322</branch_length>
+              <clade>
+                <branch_length>0.031476</branch_length>
+                <clade>
+                  <name>Chlorella-variabilis</name>
+                  <branch_length>0.079488</branch_length>
+                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                </clade>
+                <clade>
+                  <branch_length>0.02249</branch_length>
+                  <clade>
+                    <name>Chlamydomonas-eustigma</name>
+                    <branch_length>0.066821</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                  </clade>
+                  <clade>
+                    <name>Volvox-carteri</name>
+                    <branch_length>0.107502</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.057408</branch_length>
+                <clade>
+                  <name>Micromonas-pusilla</name>
+                  <branch_length>0.094248</branch_length>
+                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                </clade>
+                <clade>
+                  <branch_length>0.014624</branch_length>
+                  <clade>
+                    <name>Ostreococcus-lucimarinus</name>
+                    <branch_length>0.069181</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                  </clade>
+                  <clade>
+                    <name>Bathycoccus-prasinos</name>
+                    <branch_length>0.088404</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+        <clade>
+          <branch_length>0.005108</branch_length>
+          <clade>
+            <name>Guillardia-theta</name>
+            <branch_length>0.177967</branch_length>
+             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+          </clade>
+          <clade>
+            <branch_length>0.005243</branch_length>
+            <clade>
+              <branch_length>0.041189</branch_length>
+              <clade>
+                <name>Aureococcus-anophagefferens</name>
+                <branch_length>0.145086</branch_length>
+                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+              </clade>
+              <clade>
+                <branch_length>0.06892</branch_length>
+                <clade>
+                  <name>Fragilariopsis-cylindrus</name>
+                  <branch_length>0.095608</branch_length>
+                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                </clade>
+                <clade>
+                  <name>Phaeodactylum-tricornutum</name>
+                  <branch_length>0.085975</branch_length>
+                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                </clade>
+              </clade>
+            </clade>
+            <clade>
+              <branch_length>0.016019</branch_length>
+              <clade>
+                <branch_length>0.008265</branch_length>
+                <clade>
+                  <branch_length>0.008927</branch_length>
+                  <clade>
+                    <branch_length>0.020904</branch_length>
+                    <clade>
+                      <name>Plasmodiophora-brassicae</name>
+                      <branch_length>0.21467</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                    <clade>
+                      <branch_length>0.046262</branch_length>
+                      <clade>
+                        <name>Gracilariopsis-chorda</name>
+                        <branch_length>0.168008</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                      <clade>
+                        <branch_length>0.019857</branch_length>
+                        <clade>
+                          <name>Cyanidioschyzon-merolae</name>
+                          <branch_length>0.149313</branch_length>
+                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                        </clade>
+                        <clade>
+                          <name>Galdieria-sulphuraria</name>
+                          <branch_length>0.158745</branch_length>
+                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.011602</branch_length>
+                    <clade>
+                      <branch_length>0.018981</branch_length>
+                      <clade>
+                        <name>Naegleria-gruberi</name>
+                        <branch_length>0.221791</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                      <clade>
+                        <branch_length>0.28959</branch_length>
+                        <clade>
+                          <name>Paramecium-sonneborni</name>
+                          <branch_length>0.008425</branch_length>
+                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                        </clade>
+                        <clade>
+                          <name>Paramecium-tetraurelia</name>
+                          <branch_length>0.005763</branch_length>
+                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.083542</branch_length>
+                      <clade>
+                        <name>Dictyostelium-purpureum</name>
+                        <branch_length>0.09755</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                      <clade>
+                        <name>Heterostelium-album</name>
+                        <branch_length>0.137385</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>0.036</branch_length>
+                  <clade>
+                    <name>Trichomonas-vaginalis</name>
+                    <branch_length>0.338761</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                  </clade>
+                  <clade>
+                    <name>Vitrella-brassicaformis</name>
+                    <branch_length>0.249355</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                  </clade>
+                </clade>
+              </clade>
+              <clade>
+                <branch_length>0.015569</branch_length>
+                <clade>
+                  <branch_length>0.027067</branch_length>
+                  <clade>
+                    <name>Gonapodya-prolifera</name>
+                    <branch_length>0.174705</branch_length>
+                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                  </clade>
+                  <clade>
+                    <branch_length>0.013488</branch_length>
+                    <clade>
+                      <branch_length>0.011984</branch_length>
+                      <clade>
+                        <branch_length>0.010303</branch_length>
+                        <clade>
+                          <branch_length>0.026809</branch_length>
+                          <clade>
+                            <branch_length>0.012291</branch_length>
+                            <clade>
+                              <name>Schizosaccharomyces-pombe</name>
+                              <branch_length>0.096013</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                            </clade>
+                            <clade>
+                              <branch_length>0.011977</branch_length>
+                              <clade>
+                                <name>Taphrina-deformans</name>
+                                <branch_length>0.075443</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                              <clade>
+                                <name>Saitoella-complicata</name>
+                                <branch_length>0.080976</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.009658</branch_length>
+                            <clade>
+                              <branch_length>0.049451</branch_length>
+                              <clade>
+                                <branch_length>0.020526</branch_length>
+                                <clade>
+                                  <name>Aspergillus-nidulans</name>
+                                  <branch_length>0.117914</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.01219</branch_length>
+                                  <clade>
+                                    <name>Penicillium-decumbens</name>
+                                    <branch_length>0.066005</branch_length>
+                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                  </clade>
+                                  <clade>
+                                    <name>Uncinocarpus-reesii</name>
+                                    <branch_length>0.052559</branch_length>
+                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                  </clade>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <branch_length>0.045105</branch_length>
+                                <clade>
+                                  <name>Pyricularia-oryzae</name>
+                                  <branch_length>0.063565</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                </clade>
+                                <clade>
+                                  <name>Neurospora-crassa</name>
+                                  <branch_length>0.05807</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <branch_length>0.047987</branch_length>
+                              <clade>
+                                <name>Candida-albicans</name>
+                                <branch_length>0.103421</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                              <clade>
+                                <name>Saccharomyces-cerevisiae</name>
+                                <branch_length>0.100521</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.018583</branch_length>
+                          <clade>
+                            <name>Leucosporidium-creatinivorum</name>
+                            <branch_length>0.136279</branch_length>
+                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                          </clade>
+                          <clade>
+                            <branch_length>0.012192</branch_length>
+                            <clade>
+                              <name>Ustilago-maydis</name>
+                              <branch_length>0.077208</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                            </clade>
+                            <clade>
+                              <branch_length>0.01257</branch_length>
+                              <clade>
+                                <branch_length>0.08958</branch_length>
+                                <clade>
+                                  <name>Cryptococcus-neoformans</name>
+                                  <branch_length>0.037578</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                </clade>
+                                <clade>
+                                  <name>Kwoniella-mangroviensis</name>
+                                  <branch_length>0.038908</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                </clade>
+                              </clade>
+                              <clade>
+                                <branch_length>0.061994</branch_length>
+                                <clade>
+                                  <name>Postia-placenta</name>
+                                  <branch_length>0.055126</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.010497</branch_length>
+                                  <clade>
+                                    <name>Armillaria-gallica</name>
+                                    <branch_length>0.059644</branch_length>
+                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.01143</branch_length>
+                                    <clade>
+                                      <name>Agaricus-bisporus</name>
+                                      <branch_length>0.06877</branch_length>
+                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                    </clade>
+                                    <clade>
+                                      <name>Coprinopsis-cinerea</name>
+                                      <branch_length>0.061138</branch_length>
+                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <branch_length>0.110475</branch_length>
+                        <clade>
+                          <name>Allomyces-macrogynus</name>
+                          <branch_length>0.101459</branch_length>
+                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                        </clade>
+                        <clade>
+                          <name>Catenaria-anguillulae</name>
+                          <branch_length>0.116981</branch_length>
+                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                        </clade>
+                      </clade>
+                    </clade>
+                    <clade>
+                      <branch_length>0.018544</branch_length>
+                      <clade>
+                        <branch_length>0.011653</branch_length>
+                        <clade>
+                          <name>Conidiobolus-coronatus</name>
+                          <branch_length>0.118307</branch_length>
+                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                        </clade>
+                        <clade>
+                          <branch_length>0.039274</branch_length>
+                          <clade>
+                            <name>Smittium-mucronatum</name>
+                            <branch_length>0.084612</branch_length>
+                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                          </clade>
+                          <clade>
+                            <branch_length>0.047269</branch_length>
+                            <clade>
+                              <name>Coemansia-reversa</name>
+                              <branch_length>0.049029</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                            </clade>
+                            <clade>
+                              <name>Linderina-pennispora</name>
+                              <branch_length>0.048547</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                      <clade>
+                        <branch_length>0.01262</branch_length>
+                        <clade>
+                          <branch_length>0.015759</branch_length>
+                          <clade>
+                            <branch_length>0.054912</branch_length>
+                            <clade>
+                              <name>Hesseltinella-vesiculosa</name>
+                              <branch_length>0.060709</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                            </clade>
+                            <clade>
+                              <branch_length>0.011066</branch_length>
+                              <clade>
+                                <name>Rhizopus-microsporus</name>
+                                <branch_length>0.041588</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                              <clade>
+                                <branch_length>0.009797</branch_length>
+                                <clade>
+                                  <name>Syncephalastrum-racemosum</name>
+                                  <branch_length>0.041594</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                </clade>
+                                <clade>
+                                  <name>Phycomyces-blakesleeanus</name>
+                                  <branch_length>0.043531</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.057783</branch_length>
+                            <clade>
+                              <name>Lobosporangium-transversale</name>
+                              <branch_length>0.017649</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                            </clade>
+                            <clade>
+                              <name>Podila-verticillata</name>
+                              <branch_length>0.027435</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.009861</branch_length>
+                          <clade>
+                            <name>Rhizophagus-irregularis</name>
+                            <branch_length>0.119727</branch_length>
+                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                          </clade>
+                          <clade>
+                            <name>Basidiobolus-meristosporus</name>
+                            <branch_length>0.082819</branch_length>
+                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+                <clade>
+                  <branch_length>0.020035</branch_length>
+                  <clade>
+                    <branch_length>0.023933</branch_length>
+                    <clade>
+                      <name>Sphaeroforma-arctica</name>
+                      <branch_length>0.179503</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                    <clade>
+                      <name>Monosiga-brevicollis</name>
+                      <branch_length>0.157847</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                  </clade>
+                  <clade>
+                    <branch_length>0.011044</branch_length>
+                    <clade>
+                      <name>Capsaspora-owczarzaki</name>
+                      <branch_length>0.133535</branch_length>
+                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                    </clade>
+                    <clade>
+                      <branch_length>0.023131</branch_length>
+                      <clade>
+                        <name>Ramazzottius-varieornatus</name>
+                        <branch_length>0.152506</branch_length>
+                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                      </clade>
+                      <clade>
+                        <branch_length>0.008203</branch_length>
+                        <clade>
+                          <branch_length>0.014785</branch_length>
+                          <clade>
+                            <branch_length>0.025146</branch_length>
+                            <clade>
+                              <name>Intoshia-linei</name>
+                              <branch_length>0.156342</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                            </clade>
+                            <clade>
+                              <branch_length>0.139105</branch_length>
+                              <clade>
+                                <name>Thelohanellus-kitauei</name>
+                                <branch_length>0.086636</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                              <clade>
+                                <branch_length>0.013554</branch_length>
+                                <clade>
+                                  <name>Myxobolus-squamalis</name>
+                                  <branch_length>0.051709</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                </clade>
+                                <clade>
+                                  <name>Henneguya-salminicola</name>
+                                  <branch_length>0.041692</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.021943</branch_length>
+                            <clade>
+                              <name>Trichinella-spiralis</name>
+                              <branch_length>0.10287</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                            </clade>
+                            <clade>
+                              <branch_length>0.054804</branch_length>
+                              <clade>
+                                <name>Caenorhabditis-elegans</name>
+                                <branch_length>0.121572</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                              <clade>
+                                <name>Toxocara-canis</name>
+                                <branch_length>0.092297</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                        <clade>
+                          <branch_length>0.007593</branch_length>
+                          <clade>
+                            <branch_length>0.141379</branch_length>
+                            <clade>
+                              <name>Adineta-steineri</name>
+                              <branch_length>0.017332</branch_length>
+                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                            </clade>
+                            <clade>
+                              <branch_length>0.004424</branch_length>
+                              <clade>
+                                <name>Rotaria-magnacalcarata</name>
+                                <branch_length>0.01203</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                              <clade>
+                                <name>Rotaria-sp.Silwood1</name>
+                                <branch_length>0.010698</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                              </clade>
+                            </clade>
+                          </clade>
+                          <clade>
+                            <branch_length>0.008471</branch_length>
+                            <clade>
+                              <branch_length>0.041846</branch_length>
+                              <clade>
+                                <name>Macrostomum-lignano</name>
+                                <branch_length>0.095104</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                              </clade>
+                              <clade>
+                                <branch_length>0.052182</branch_length>
+                                <clade>
+                                  <branch_length>0.036808</branch_length>
+                                  <clade>
+                                    <name>Echinococcus-granulosus</name>
+                                    <branch_length>0.034008</branch_length>
+                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                  </clade>
+                                  <clade>
+                                    <name>Mesocestoides-corti</name>
+                                    <branch_length>0.021226</branch_length>
+                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                  </clade>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.032189</branch_length>
+                                  <clade>
+                                    <name>Schistosoma-mansoni</name>
+                                    <branch_length>0.036976</branch_length>
+                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.008726</branch_length>
+                                    <clade>
+                                      <name>Fasciola-hepatica</name>
+                                      <branch_length>0.032418</branch_length>
+                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                    </clade>
+                                    <clade>
+                                      <name>Opisthorchis-viverrini</name>
+                                      <branch_length>0.031265</branch_length>
+                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                            <clade>
+                              <branch_length>0.011053</branch_length>
+                              <clade>
+                                <name>Dimorphilus-gyrociliatus</name>
+                                <branch_length>0.134869</branch_length>
+                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                              </clade>
+                              <clade>
+                                <branch_length>0.012298</branch_length>
+                                <clade>
+                                  <name>Helobdella-robusta</name>
+                                  <branch_length>0.101661</branch_length>
+                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                </clade>
+                                <clade>
+                                  <branch_length>0.011644</branch_length>
+                                  <clade>
+                                    <branch_length>0.005722</branch_length>
+                                    <clade>
+                                      <name>Priapulus-caudatus</name>
+                                      <branch_length>0.103066</branch_length>
+                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>0.007052</branch_length>
+                                      <clade>
+                                        <name>Capitella-teleta</name>
+                                        <branch_length>0.080918</branch_length>
+                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.005997</branch_length>
+                                        <clade>
+                                          <branch_length>0.010296</branch_length>
+                                          <clade>
+                                            <name>Crassostrea-gigas</name>
+                                            <branch_length>0.055598</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                          </clade>
+                                          <clade>
+                                            <name>Octopus-bimaculoides</name>
+                                            <branch_length>0.057379</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>0.007204</branch_length>
+                                          <clade>
+                                            <name>Lingula-anatina</name>
+                                            <branch_length>0.042667</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                          </clade>
+                                          <clade>
+                                            <name>Owenia-fusiformis</name>
+                                            <branch_length>0.075451</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                  <clade>
+                                    <branch_length>0.004227</branch_length>
+                                    <clade>
+                                      <branch_length>0.01414</branch_length>
+                                      <clade>
+                                        <branch_length>0.012553</branch_length>
+                                        <clade>
+                                          <name>Amphimedon-queenslandica</name>
+                                          <branch_length>0.098761</branch_length>
+                                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>0.014519</branch_length>
+                                          <clade>
+                                            <name>Hydra-vulgaris</name>
+                                            <branch_length>0.095063</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>0.011918</branch_length>
+                                            <clade>
+                                              <name>Dendronephthya-gigantea</name>
+                                              <branch_length>0.063412</branch_length>
+                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                            </clade>
+                                            <clade>
+                                              <name>Nematostella-vectensis</name>
+                                              <branch_length>0.053399</branch_length>
+                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.007154</branch_length>
+                                        <clade>
+                                          <branch_length>0.027327</branch_length>
+                                          <clade>
+                                            <name>Oikopleura-dioica</name>
+                                            <branch_length>0.176582</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>0.024424</branch_length>
+                                            <clade>
+                                              <name>Styela-clava</name>
+                                              <branch_length>0.055117</branch_length>
+                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                            </clade>
+                                            <clade>
+                                              <branch_length>0.024668</branch_length>
+                                              <clade>
+                                                <name>Ciona-intestinalis</name>
+                                                <branch_length>0.048397</branch_length>
+                                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                              </clade>
+                                              <clade>
+                                                <name>Phallusia-mammillata</name>
+                                                <branch_length>0.035434</branch_length>
+                                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>0.007688</branch_length>
+                                          <clade>
+                                            <name>Branchiostoma-floridae</name>
+                                            <branch_length>0.061169</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>0.032086</branch_length>
+                                            <clade>
+                                              <name>Petromyzon-marinus</name>
+                                              <branch_length>0.061336</branch_length>
+                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                            </clade>
+                                            <clade>
+                                              <branch_length>0.011674</branch_length>
+                                              <clade>
+                                                <branch_length>0.008743</branch_length>
+                                                <clade>
+                                                  <name>Tetraodon-nigroviridis</name>
+                                                  <branch_length>0.024696</branch_length>
+                                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                </clade>
+                                                <clade>
+                                                  <branch_length>0.009987</branch_length>
+                                                  <clade>
+                                                    <branch_length>0.00792</branch_length>
+                                                    <clade>
+                                                      <name>Astyanax-mexicanus</name>
+                                                      <branch_length>0.008587</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Danio-rerio</name>
+                                                      <branch_length>0.012278</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <branch_length>0.009751</branch_length>
+                                                    <clade>
+                                                      <name>Poecilia-formosa</name>
+                                                      <branch_length>0.011776</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Takifugu-rubripes</name>
+                                                      <branch_length>0.012579</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <branch_length>0.004455</branch_length>
+                                                <clade>
+                                                  <name>Rhincodon-typus</name>
+                                                  <branch_length>0.023369</branch_length>
+                                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                </clade>
+                                                <clade>
+                                                  <branch_length>0.004843</branch_length>
+                                                  <clade>
+                                                    <name>Latimeria-chalumnae</name>
+                                                    <branch_length>0.028578</branch_length>
+                                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                  </clade>
+                                                  <clade>
+                                                    <branch_length>0.005134</branch_length>
+                                                    <clade>
+                                                      <name>Protopterus-annectens</name>
+                                                      <branch_length>0.022573</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>0.006886</branch_length>
+                                                      <clade>
+                                                        <branch_length>0.005423</branch_length>
+                                                        <clade>
+                                                          <branch_length>0.014657</branch_length>
+                                                          <clade>
+                                                            <name>Homo-sapiens</name>
+                                                            <branch_length>0.004734</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Mus-musculus</name>
+                                                            <branch_length>0.010761</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                        </clade>
+                                                        <clade>
+                                                          <branch_length>0.0034</branch_length>
+                                                          <clade>
+                                                            <branch_length>0.002246</branch_length>
+                                                            <clade>
+                                                              <name>Chrysemys-picta</name>
+                                                              <branch_length>0.004937</branch_length>
+                                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                            </clade>
+                                                            <clade>
+                                                              <branch_length>0.005898</branch_length>
+                                                              <clade>
+                                                                <name>Gallus-gallus</name>
+                                                                <branch_length>0.002772</branch_length>
+                                                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                              </clade>
+                                                              <clade>
+                                                                <name>Opisthocomus-hoazin</name>
+                                                                <branch_length>0.008942</branch_length>
+                                                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                              </clade>
+                                                            </clade>
+                                                          </clade>
+                                                          <clade>
+                                                            <branch_length>0.007226</branch_length>
+                                                            <clade>
+                                                              <name>Anolis-carolinensis</name>
+                                                              <branch_length>0.007815</branch_length>
+                                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                            </clade>
+                                                            <clade>
+                                                              <name>Python-bivittatus</name>
+                                                              <branch_length>0.011528</branch_length>
+                                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                            </clade>
+                                                          </clade>
+                                                        </clade>
+                                                      </clade>
+                                                      <clade>
+                                                        <branch_length>0.003492</branch_length>
+                                                        <clade>
+                                                          <branch_length>0.010678</branch_length>
+                                                          <clade>
+                                                            <name>Geotrypetes-seraphini</name>
+                                                            <branch_length>0.003437</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Microcaecilia-unicolor</name>
+                                                            <branch_length>0.002688</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                        </clade>
+                                                        <clade>
+                                                          <branch_length>0.009331</branch_length>
+                                                          <clade>
+                                                            <name>Nanorana-parkeri</name>
+                                                            <branch_length>0.02303</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Xenopus-laevis</name>
+                                                            <branch_length>0.013025</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                        </clade>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                    <clade>
+                                      <branch_length>0.013416</branch_length>
+                                      <clade>
+                                        <branch_length>0.011102</branch_length>
+                                        <clade>
+                                          <branch_length>0.01187</branch_length>
+                                          <clade>
+                                            <name>Parasteatoda-tepidariorum</name>
+                                            <branch_length>0.060017</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>0.01083</branch_length>
+                                            <clade>
+                                              <name>Centruroides-sculpturatus</name>
+                                              <branch_length>0.035472</branch_length>
+                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                            </clade>
+                                            <clade>
+                                              <name>Limulus-polyphemus</name>
+                                              <branch_length>0.04132</branch_length>
+                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>0.014385</branch_length>
+                                          <clade>
+                                            <name>Tetranychus-urticae</name>
+                                            <branch_length>0.11074</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                          </clade>
+                                          <clade>
+                                            <name>Varroa-jacobsoni</name>
+                                            <branch_length>0.100173</branch_length>
+                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                      <clade>
+                                        <branch_length>0.014226</branch_length>
+                                        <clade>
+                                          <name>Eurytemora-affinis</name>
+                                          <branch_length>0.119485</branch_length>
+                                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                        </clade>
+                                        <clade>
+                                          <branch_length>0.006563</branch_length>
+                                          <clade>
+                                            <branch_length>0.003735</branch_length>
+                                            <clade>
+                                              <branch_length>0.034729</branch_length>
+                                              <clade>
+                                                <name>Allacma-fusca</name>
+                                                <branch_length>0.054959</branch_length>
+                                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                              </clade>
+                                              <clade>
+                                                <branch_length>0.016427</branch_length>
+                                                <clade>
+                                                  <name>Folsomia-candida</name>
+                                                  <branch_length>0.080717</branch_length>
+                                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                                </clade>
+                                                <clade>
+                                                  <name>Orchesella-cincta</name>
+                                                  <branch_length>0.052297</branch_length>
+                                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                            <clade>
+                                              <branch_length>0.004775</branch_length>
+                                              <clade>
+                                                <name>Daphnia-pulex</name>
+                                                <branch_length>0.078387</branch_length>
+                                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                              </clade>
+                                              <clade>
+                                                <branch_length>0.008969</branch_length>
+                                                <clade>
+                                                  <name>Amphibalanus-amphitrite</name>
+                                                  <branch_length>0.08392</branch_length>
+                                                   <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                </clade>
+                                                <clade>
+                                                  <branch_length>0.0267</branch_length>
+                                                  <clade>
+                                                    <name>Hyalella-azteca</name>
+                                                    <branch_length>0.070871</branch_length>
+                                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                  </clade>
+                                                  <clade>
+                                                    <name>Penaeus-vannamei</name>
+                                                    <branch_length>0.039407</branch_length>
+                                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                          <clade>
+                                            <branch_length>0.016436</branch_length>
+                                            <clade>
+                                              <name>Cloeon-dipterum</name>
+                                              <branch_length>0.107905</branch_length>
+                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                            </clade>
+                                            <clade>
+                                              <branch_length>0.006935</branch_length>
+                                              <clade>
+                                                <branch_length>0.008128</branch_length>
+                                                <clade>
+                                                  <branch_length>0.033036</branch_length>
+                                                  <clade>
+                                                    <branch_length>0.025316</branch_length>
+                                                    <clade>
+                                                      <name>Copidosoma-floridanum</name>
+                                                      <branch_length>0.03369</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Nasonia-vitripennis</name>
+                                                      <branch_length>0.019923</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <branch_length>0.008285</branch_length>
+                                                    <clade>
+                                                      <branch_length>0.013996</branch_length>
+                                                      <clade>
+                                                        <name>Fopius-arisanus</name>
+                                                        <branch_length>0.025487</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Microplitis-demolitor</name>
+                                                        <branch_length>0.039864</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>0.007758</branch_length>
+                                                      <clade>
+                                                        <name>Orussus-abietinus</name>
+                                                        <branch_length>0.027613</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                      <clade>
+                                                        <branch_length>0.008741</branch_length>
+                                                        <clade>
+                                                          <name>Ooceraea-biroi</name>
+                                                          <branch_length>0.027842</branch_length>
+                                                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                        </clade>
+                                                        <clade>
+                                                          <branch_length>0.004865</branch_length>
+                                                          <clade>
+                                                            <name>Polistes-canadensis</name>
+                                                            <branch_length>0.023212</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                          <clade>
+                                                            <branch_length>0.009577</branch_length>
+                                                            <clade>
+                                                              <name>Bombus-terrestris</name>
+                                                              <branch_length>0.01512</branch_length>
+                                                               <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                            </clade>
+                                                            <clade>
+                                                              <branch_length>0.004329</branch_length>
+                                                              <clade>
+                                                                <name>Habropoda-laboriosa</name>
+                                                                <branch_length>0.013142</branch_length>
+                                                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                              </clade>
+                                                              <clade>
+                                                                <name>Melipona-quadrifasciata</name>
+                                                                <branch_length>0.013317</branch_length>
+                                                                 <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                              </clade>
+                                                            </clade>
+                                                          </clade>
+                                                        </clade>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <branch_length>0.011109</branch_length>
+                                                  <clade>
+                                                    <branch_length>0.028018</branch_length>
+                                                    <clade>
+                                                      <name>Nicrophorus-vespilloides</name>
+                                                      <branch_length>0.043745</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>0.009372</branch_length>
+                                                      <clade>
+                                                        <name>Tribolium-castaneum</name>
+                                                        <branch_length>0.046014</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                      <clade>
+                                                        <branch_length>0.008452</branch_length>
+                                                        <clade>
+                                                          <name>Dendroctonus-ponderosae</name>
+                                                          <branch_length>0.030425</branch_length>
+                                                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                                        </clade>
+                                                        <clade>
+                                                          <branch_length>0.008556</branch_length>
+                                                          <clade>
+                                                            <name>Anoplophora-glabripennis</name>
+                                                            <branch_length>0.018044</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Leptinotarsa-decemlineata</name>
+                                                            <branch_length>0.030669</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                          </clade>
+                                                        </clade>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <branch_length>0.014453</branch_length>
+                                                    <clade>
+                                                      <branch_length>0.049628</branch_length>
+                                                      <clade>
+                                                        <name>Bombyx-mori</name>
+                                                        <branch_length>0.017059</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Papilio-xuthus</name>
+                                                        <branch_length>0.013897</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>0.013057</branch_length>
+                                                      <clade>
+                                                        <name>Ctenocephalides-felis</name>
+                                                        <branch_length>0.053538</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                      <clade>
+                                                        <branch_length>0.012975</branch_length>
+                                                        <clade>
+                                                          <name>Aedes-aegypti</name>
+                                                          <branch_length>0.04162</branch_length>
+                                                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                                        </clade>
+                                                        <clade>
+                                                          <branch_length>0.043868</branch_length>
+                                                          <clade>
+                                                            <name>Drosophila-melanogaster</name>
+                                                            <branch_length>0.029183</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                                          </clade>
+                                                          <clade>
+                                                            <name>Stomoxys-calcitrans</name>
+                                                            <branch_length>0.02526</branch_length>
+                                                             <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">0</property>
+                                                          </clade>
+                                                        </clade>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                              <clade>
+                                                <branch_length>0.006103</branch_length>
+                                                <clade>
+                                                  <branch_length>0.007319</branch_length>
+                                                  <clade>
+                                                    <branch_length>0.045817</branch_length>
+                                                    <clade>
+                                                      <name>Frankliniella-occidentalis</name>
+                                                      <branch_length>0.023436</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                    <clade>
+                                                      <name>Thrips-palmi</name>
+                                                      <branch_length>0.027027</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                  </clade>
+                                                  <clade>
+                                                    <branch_length>0.011313</branch_length>
+                                                    <clade>
+                                                      <name>Bemisia-tabaci</name>
+                                                      <branch_length>0.051807</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>0.009465</branch_length>
+                                                      <clade>
+                                                        <name>Acyrthosiphon-pisum</name>
+                                                        <branch_length>0.08479</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                      <clade>
+                                                        <name>Cimex-lectularius</name>
+                                                        <branch_length>0.051582</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                                <clade>
+                                                  <branch_length>0.005135</branch_length>
+                                                  <clade>
+                                                    <name>Pediculus-humanus</name>
+                                                    <branch_length>0.070791</branch_length>
+                                                     <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                  </clade>
+                                                  <clade>
+                                                    <branch_length>0.004748</branch_length>
+                                                    <clade>
+                                                      <name>Ladona-fulva</name>
+                                                      <branch_length>0.06959</branch_length>
+                                                       <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                    </clade>
+                                                    <clade>
+                                                      <branch_length>0.007578</branch_length>
+                                                      <clade>
+                                                        <name>Timema-cristinae</name>
+                                                        <branch_length>0.056765</branch_length>
+                                                         <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                      </clade>
+                                                      <clade>
+                                                        <branch_length>0.023774</branch_length>
+                                                        <clade>
+                                                          <name>Blattella-germanica</name>
+                                                          <branch_length>0.028645</branch_length>
+                                                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                        </clade>
+                                                        <clade>
+                                                          <name>Zootermopsis-nevadensis</name>
+                                                          <branch_length>0.023615</branch_length>
+                                                           <property ref="vector:index=0" datatype="xsd:boolean" applies_to="node">1</property>
+                                                        </clade>
+                                                      </clade>
+                                                    </clade>
+                                                  </clade>
+                                                </clade>
+                                              </clade>
+                                            </clade>
+                                          </clade>
+                                        </clade>
+                                      </clade>
+                                    </clade>
+                                  </clade>
+                                </clade>
+                              </clade>
+                            </clade>
+                          </clade>
+                        </clade>
+                      </clade>
+                    </clade>
+                  </clade>
+                </clade>
+              </clade>
+            </clade>
+          </clade>
+        </clade>
+      </clade>
+    </clade>
+  </clade>
+</phylogeny>
+
+</phyloxml>

@@ -1,0 +1,396 @@
+---
+title: "Hiro_Phylogeny"
+author: "Tom Carroll"
+date: "5/3/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = FALSE,message = FALSE,eval=FALSE)
+```
+
+# ETE3 setup
+
+We use ETE3 toolkit to create our phylogenetic tree for co-pap.
+
+We can install this from Conda, here using the Herper package
+
+```{r installETE3ssss, eval=FALSE}
+require(Herper)
+miniconda <- "/Users/thomascarroll/Desktop/Projects/Funabaki/Phylogeny/Phylogene/ete3Conda/"
+install_CondaTools(tools = "ete3",
+                   env = "ete3",
+                   channels = "etetoolkit",
+                   pathToMiniConda = miniconda)
+with_CondaEnv("ete3",
+              code = {
+                system("ete3 --help")
+              },
+              pathToMiniConda = miniconda)
+
+```
+
+```{r installETE3ss, eval=TRUE,echo=FALSE}
+require(Herper)
+miniconda <- "/Users/thomascarroll/Desktop/Projects/Funabaki/Phylogeny/Phylogene/ete3Conda/"
+
+cat(with_CondaEnv("ete3",
+              code = {
+                system("ete3 --help",intern = TRUE)
+              },
+              pathToMiniConda = miniconda),sep = "\n")
+
+```
+
+## Fix ete3 build
+
+The ete3 conda build isnt correctly built as the clustal installation is mis-directed (for macOS builds).
+
+
+We can fix this by install clustal ourselves and copying to ete3 build bin directory.
+
+```{r installETE3, eval=FALSE}
+install_CondaTools(tools = "clustalo",
+                   env = "clustal",
+                   pathToMiniConda = miniconda)
+
+with_CondaEnv("clustal",
+              code = {
+                system("clustalo --help")
+              },
+              pathToMiniConda = miniconda)
+```
+
+
+```{r installETE3w, eval=TRUE,echo=FALSE}
+
+cat(with_CondaEnv("clustal",
+              code = {
+                system("clustalo --help",intern = TRUE)
+              },
+              pathToMiniConda = miniconda),sep = "\n")
+```
+
+```{r installvlustal, eval=FALSE}
+clustalBin <- file.path(miniconda,"ete3Conda/envs/clustal/bin/")
+ete3Bin <- file.path(miniconda,"ete3Conda/envs/ete3/bin/")
+
+file.copy(file.path(clustalBin,"clustal0"),
+          file.path(ete3Bin,"clustal0"),
+          overwrite = TRUE)
+
+
+with_CondaEnv("ete3",
+              code = {
+                system("clustalo --help")
+              },
+              pathToMiniConda = miniconda)
+```
+
+```{r newclustal, eval=TRUE,echo=FALSE}
+ cat(with_CondaEnv("ete3",
+              code = {
+                system("clustalo --help",intern = TRUE)
+              },
+              pathToMiniConda = miniconda),sep = "\n")            
+```
+
+## We can now check the full build
+
+```{r buldcheck2, eval=FALSE,echo=TRUE,cache=TRUE}
+ cat(with_CondaEnv("ete3",
+              code = {
+                system("ete3 build check",intern = TRUE)
+              },
+              pathToMiniConda = miniconda),sep = "\n")            
+```
+
+
+# Get inputs for species trees.
+
+We need to create a FASTA file with all the gene sequences of interest and a COG.txt file containing the sets of Orthologous genes as input for ete3 built species trees. 
+
+We use rentrez and Biostrings to retreive sequences and to create the FASTA.
+
+
+I have cleaned up the sequence table a little to allow for matching against NCBI databases before reading into R.
+
+In the below code we read in file and clean up IDs and missing entries.
+
+
+```{r,eval=FALSE}
+
+require(rentrez)
+require(Biostrings)
+require(stringr)
+
+
+temp <- read.delim("Full list2-Table 1_noINO8.tsv",sep="\t",row.names = 1)
+temp[temp == "ND"] <- NA
+temp[temp == ""] <- NA
+rownames(temp) <- gsub("\\*","",rownames(temp)) %>% 
+  str_replace("\\s","-") %>% 
+  str_replace("\\s","")
+```
+
+We then loop through the file, again further cleaning up species IDs and using the rentrez package's entrez_fetch to receive the protein sequences for these proteins of interest.
+
+The resulting protein sequences are written to file **proteins.fa**
+
+```{r,eval=FALSE}
+
+
+#dups
+# "XP_006456558" "XP_024335923" "XP_020366230"
+# "KXN70559"     "XP_011601133"
+# Remove INO80 column
+# "NP_001136020" Is human?
+
+prot_gen <- list()
+orthoList <- list()
+tempProtein <- AAStringSet()
+
+for(i in 1:ncol(temp)){
+  toPrint <- tempfile()
+  toFind <- gsub(",.*","",temp[,i]) %>% 
+    str_remove(pattern = "\\(\\?\\)") %>%
+    gsub("\\*.*","",.) %>% 
+    str_remove(pattern = "\\(.*") %>% 
+    na.omit() %>% 
+    unique %>% 
+    str_trim
+  
+  find2 <- paste(rownames(temp)[which(!is.na(temp[,i]))],colnames(temp)[i],sep="_")
+  orthoList[[i]] <- find2
+  prot_gen[[i]] <- entrez_fetch(id = toFind,
+                           db = "protein",
+                           rettype = "fasta")
+  
+  cat(prot_gen[[i]],file = toPrint)
+  tempAA <- readAAStringSet(toPrint)
+  names(tempAA) <- names(tempAA) %>% gsub("\\s.*","",.) %>% gsub("\\.\\d","",.)
+  names(tempAA) <- gsub("CAE7948992","CAE7948992.1",names(tempAA))
+  names(tempAA) <- find2[toFind %in% names(tempAA)]
+
+  tempProtein <- c(tempProtein,tempAA)
+  message(i)
+}
+
+names(tempProtein) <- names(tempProtein) %>% gsub("\\s.*","",.) %>% gsub("\\.\\d","",.)
+# names(tempProtein)[length(tempProtein)] <- "Homo-sapiens_MECP2"
+writeXStringSet(tempProtein,"protein_September.fa")
+```
+
+We also create a tab separated text file grouping genes into their orthologous groups.
+
+```{r,eval=FALSE}
+
+for(i in 1:length(orthoList)){
+  orthoTemp <- as.data.frame(orthoList[[i]])
+  orthoTemp <- orthoTemp[orthoTemp[,1] %in% names(tempProtein),,drop=FALSE]
+  if(i == 1){
+    write.table(orthoTemp %>% t,file="COG_September.txt",sep="\t",append = FALSE,row.names = FALSE,col.names = FALSE,quote = FALSE)
+  }
+  else{
+    write.table(orthoTemp %>% t,file="COG_September.txt",sep="\t",append = TRUE,row.names = FALSE,col.names = FALSE,quote = FALSE)
+  }
+
+}
+
+```
+
+
+# Build phylogenetic tree
+
+Now we have all the inputs for ete3 we can use the Herper environment to run the ete3 build commands for species trees with default parameters.
+
+
+```{r,eval=FALSE}
+local_CondaEnv("ete3",
+               pathToMiniConda = miniconda)
+
+cmd <- "ete3 build --cpu 4 -w clustalo_default-trimal01-none-none -m cog_all-alg_concat_default-fasttree_default -o basic_sptree_new_September/ --clearall -a protein_September.fa --cogs COG_September.txt"
+
+system(cmd,wait=FALSE,intern = FALSE)
+
+
+```
+
+
+# Visualise the tree
+
+```{r,eval=TRUE,fig.height=20,fig.width=15}
+library(tidyverse)
+library(ggtree)
+
+tree <- read.tree("basic_sptree_new_September/cog_all-alg_concat_default-fasttree_default/protein_September.fa.final_tree.nw")
+
+
+# rand_p4_tree <- as(tree, "phylo4")
+# Finally, add tip labels and adjust axis
+ggtree(tree) + 
+  theme_tree2() + 
+  geom_tiplab()
+
+
+```
+
+
+# Build presense absense fasta for Co-pap
+
+
+We then create the FASTA file showing presense or absense of genes within differing species
+
+```{r,eval=FALSE}
+
+require(rentrez)
+require(Biostrings)
+require(stringr)
+
+
+temp <- read.delim("Full list2-Table 1_noINO8.tsv",sep="\t",row.names = 1)
+temp[temp == "ND"] <- NA
+temp[temp == ""] <- NA
+rownames(temp) <- gsub("\\*","",rownames(temp)) %>% 
+  str_replace("\\s","-") %>% 
+  str_replace("\\s","")
+
+temp[!is.na(temp)] <- 1
+temp[is.na(temp)] <- 0
+
+
+pa_Fasta <- BStringSet(apply(temp,1,paste,collapse=""))
+names(pa_Fasta) <- gsub(" ","_",names(pa_Fasta)) %>% gsub("_(Polysphondylium_pallidum)","",.) %>% gsub("_$","",.) %>%
+  gsub("Heterostelium_album_\\(Polysphondylium_pallidum\\)","Heterostelium_album",.) %>%
+  # gsub("Kwoniella_mangroviensis","Kwoniella_mangrovensis",.) %>%
+  # gsub("Ostreococcus_lucimarinus","Ostreococcus_sp._lucimarinus",.) %>%
+  # gsub("Physcomitrella_patens","Physcomitrium_patens",.) %>%
+  gsub("Rotaria_sp._Silwood2","Rotaria_sp._Silwood1",.) %>%
+  gsub("_sp\\._","-sp.",.) %>% gsub("_","-",.)
+
+
+writeXStringSet(pa_Fasta,filepath = "PresenseAbsenseFasta_September.fa")
+
+```
+
+# Build presense absense fasta for Full Co-pap 1
+
+
+We then create the FASTA file showing presense or absense of genes within differig species
+
+```{r,eval=FALSE}
+
+require(rentrez)
+require(Biostrings)
+require(stringr)
+
+
+temp <- read.delim("FullCOPAP1.csv",sep=",",row.names = 1)
+temp[temp == "ND"] <- NA
+temp[temp == ""] <- NA
+rownames(temp) <- gsub("\\*","",rownames(temp)) %>% 
+  str_replace("\\s","-") %>% 
+  str_replace("\\s","")
+
+# temp[!is.na(temp)] <- 1
+# temp[is.na(temp)] <- 0
+
+
+pa_Fasta <- BStringSet(apply(temp,1,paste,collapse=""))
+names(pa_Fasta) <- gsub(" ","_",names(pa_Fasta)) %>% gsub("_(Polysphondylium_pallidum)","",.) %>% gsub("_$","",.) %>%
+  gsub("Heterostelium_album_\\(Polysphondylium_pallidum\\)","Heterostelium_album",.) %>%
+  # gsub("Kwoniella_mangroviensis","Kwoniella_mangrovensis",.) %>%
+  # gsub("Ostreococcus_lucimarinus","Ostreococcus_sp._lucimarinus",.) %>%
+  # gsub("Physcomitrella_patens","Physcomitrium_patens",.) %>%
+  gsub("Rotaria_sp._Silwood2","Rotaria_sp._Silwood1",.) %>%
+  gsub("_sp\\._","-sp.",.) %>% gsub("_","-",.)
+
+names(pa_Fasta) <- gsub("Symbiodinium-sp\\.KB8",
+                        "Symbiodinium-spKB8",
+                        names(pa_Fasta)
+                        ) %>%
+  gsub("Blastocystis-sp\\.subtype-4",
+       "Blastocystis-spsubtype",.) %>% 
+  gsub("Heterostelium-album\\(Polysphondylium-pallidum\\)",
+       "Heterostelium-album",.)  
+
+writeXStringSet(pa_Fasta,filepath = "FullCOPAP1.fa")
+
+```
+
+
+```{r}
+
+p4_tree <- as(tree, "phylo4")
+p4_tree <- subset(p4_tree, tips.include=names(pa_Fasta))
+p4_tree_sv <- as(p4_tree, "phylo")
+ggtree(p4_tree_sv) + 
+  theme_tree2() + 
+  geom_tiplab()
+require(ape)
+write.tree(p4_tree_sv,
+           file = "FullCOPAP1.nw")
+```
+## Results from copap
+http://copap.tau.ac.il/results/16866134894473/output.php
+
+# Build presense absense fasta for Full Co-pap 2
+
+
+We then create the FASTA file showing presense or absense of genes within differig species
+
+```{r,eval=FALSE}
+
+require(rentrez)
+require(Biostrings)
+require(stringr)
+
+
+temp <- read.delim("FullCOPAP2.csv",sep=",",row.names = 1)
+temp[temp == "ND"] <- NA
+temp[temp == ""] <- NA
+rownames(temp) <- gsub("\\*","",rownames(temp)) %>% 
+  str_replace("\\s","-") %>% 
+  str_replace("\\s","")
+
+# temp[!is.na(temp)] <- 1
+# temp[is.na(temp)] <- 0
+
+
+pa_Fasta <- BStringSet(apply(temp,1,paste,collapse=""))
+names(pa_Fasta) <- gsub(" ","_",names(pa_Fasta)) %>% gsub("_(Polysphondylium_pallidum)","",.) %>% gsub("_$","",.) %>%
+  gsub("Heterostelium_album_\\(Polysphondylium_pallidum\\)","Heterostelium_album",.) %>%
+  # gsub("Kwoniella_mangroviensis","Kwoniella_mangrovensis",.) %>%
+  # gsub("Ostreococcus_lucimarinus","Ostreococcus_sp._lucimarinus",.) %>%
+  # gsub("Physcomitrella_patens","Physcomitrium_patens",.) %>%
+  gsub("Rotaria_sp._Silwood2","Rotaria_sp._Silwood1",.) %>%
+  gsub("_sp\\._","-sp.",.) %>% gsub("_","-",.)
+
+names(pa_Fasta) <- gsub("Symbiodinium-sp\\.KB8",
+                        "Symbiodinium-spKB8",
+                        names(pa_Fasta)
+                        ) %>%
+  gsub("Blastocystis-sp\\.subtype-4",
+       "Blastocystis-spsubtype",.) %>% 
+  gsub("Heterostelium-album\\(Polysphondylium-pallidum\\)",
+       "Heterostelium-album",.)  
+
+writeXStringSet(pa_Fasta,filepath = "FullCOPAP2.fa")
+
+```
+
+
+```{r}
+
+p4_tree <- as(tree, "phylo4")
+p4_tree <- subset(p4_tree, tips.include=names(pa_Fasta))
+p4_tree_sv <- as(p4_tree, "phylo")
+ggtree(p4_tree_sv) + 
+  theme_tree2() + 
+  geom_tiplab()
+require(ape)
+write.tree(p4_tree_sv,
+           file = "FullCOPAP2.nw")
+```
+## Results from copap
+http://copap.tau.ac.il/results/16866136714668/output.php
